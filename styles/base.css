@@ -11,7 +11,7 @@
     --background-principal:#f7f7f943;
     --background-card:#ACC8E5;
     --background-bottom:#f1e9f1;
-    --text-principal: #112A46;
+    --text-principal: #dce1e5;
     --secondary-text: #6B6572;
     --color-nav: rgb(61, 115, 154);
 }
@@ -125,7 +125,7 @@ main h1{
     font-weight: bold;
     border-bottom: 1px solid var(--secondary-text);
     width: 20rem;
-    color: var(--text-principal);
+    color: #112A46;
     text-align: center;
     margin: 0 auto;
 }
@@ -153,7 +153,7 @@ figure{
 }
 .dev-resources a{
     text-decoration: none;
-    color: var(--text-principal);
+    color:#112A46;
 }
 
 
