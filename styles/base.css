@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+:root{
+    --background-principal:#f7f7f943;
+    --background-card:#ACC8E5;
+    --background-bottom:#f1e9f1;
+    --text-principal: #112A46;
+    --secondary-text: #6B6572;
+    --color-nav: rgb(61, 115, 154);
+}
+
+
+
+body{
+    background-color: var(--background-principal);
+}
+
+header{
+    text-align: center;
+    background-color: var(--background-card);
+    padding: 2rem 0 0 0;
+}
+
+header span{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.navigation{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0; 
+    background-color: var(--color-nav);
+    padding:10px;
+    border-radius: 8px;
+    height: 4vh;
+}
+
+.navigation li{
+    display: flex;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--text-principal);
+    padding: 0 1vh;
+    height: 100%;
+    border-radius: 12px;
+    font-weight:bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.navigation a:hover {
+    background-color: var(--background-bottom);
+    color: var(--text-principal);
+    height: 100%;
+    transform: scale(1.05);
+}
+
+main{
+    display: grid;
+    grid-template: auto 1fr /2fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+main img{
+    height: 200px;
+    width: auto;
+}
+
+main h1{
+    grid-column: 1/-1;
+    text-align: center;
+    color: var(--secundary-text);
+}
+
+.card {
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+#section-about, #section-dev {
+    padding: 0;
+    grid-column: 1;
+    background-color: var(--background-card);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#section-about h2,
+#section-dev h2 {
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-nav);
+    color: var(--text-principal);
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.about-personal, .about-country {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+#section-about h3{
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: 1px solid var(--secondary-text);
+    width: 20rem;
+    color: var(--text-principal);
+    text-align: center;
+    margin: 0 auto;
+}
+
+#section-dev{
+    grid-column: 2;
+    background-color: var(--background-bottom);
+}
+
+figure{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.dev-resources{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    padding: 3rem;
+}
+
+.item-dev{
+    padding: 0.3rem;
+}
+.dev-resources a{
+    text-decoration: none;
+    color: var(--text-principal);
+}
+
+
+footer{
+    background-color: var(--color-nav);
+    text-align: center;
+    padding: 2rem;
+}
