@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <meta name="author" content="Mitchelle Madumere">
+    <meta name="description" content="wdd131 dynamic javascript webpages using nigeria geographics">
+    <link rel="preload" href="styles/quicksand.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <span>Nigeria</span>
+        </h1>
+    </header>
+    <main>
+        <picture>
+             <source
+            srcset="images/aso-rock.webp"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="images/aso-rock.webp"
+            media="(min-width: 500px)"
+          />
+          <source
+            srcset="images/aso-rock.webp"
+            media="(min-width: 400px)"
+          />
+          <img
+            src="images/aso-rock.webp"
+            alt="aso rock"
+           
+          />
+        </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <ul class="list">
+                <li>
+                    <h3>Area:</h3>
+                    <p>923,769 sq km</p>
+                </li>
+                <li>
+                    <h3>Population:</h3>
+                    <p>223,804,632</p>
+                </li>
+                <li>
+                    <h3>Capital:</h3>
+                    <p>Abuja</p>
+                </li>
+                <li>
+                    <h3>Languages:</h3>
+                    <p>English(official) Igbo, Hausa, Yoruba</p>
+                </li>
+                <li>
+                    <h3>Currency:</h3>
+                    <p>Nigerian Naira(NGN)</p>
+                </li>
+                <li>
+                    <h3>Time Zone:</h3>
+                    <p>WAT</p>
+                </li>
+                <li>
+                    <h3>Calling Code:</h3>
+                    <p>+234</p>
+                </li>
+                <li>
+                    <h3>Nearby Places:</h3>
+                    <p>Ghana</p>
+                </li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <span>
+                <img src="images/weather.svg" alt="Weather icon, cloud with sun">
+            </span>
+            <ul class="list">
+                <li>
+                    <h3>Temperature:</h3>
+                    <p id="temperature"></p>
+                </li>
+                <li>
+                    <h3>Conditions:</h3>
+                    <p id="condition"></p>
+                </li>
+                <li>
+                    <h3>Wind:</h3>
+                    <p id="wind"></p>
+                </li>
+                <li>
+                    <h3>Wind Chill:</h3>
+                    <p id="windchill"></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p id="currentyear"><span></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

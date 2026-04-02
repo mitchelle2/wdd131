@@ -1,0 +1,146 @@
+@font-face {
+            font-family: "Quicksand";
+            /* src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); */
+            src: url('../styles/quicksand.woff2') format('woff2');
+            font-display: swap;
+        }
+
+@media screen and (max-width: 700px){
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+        padding-bottom: .5rem;
+    }
+    #data, #weather {
+        max-width: 700px;
+    }
+    .list li {
+        grid-template-columns: 2fr 3fr;
+    }
+    section span {
+        text-align: center;
+        margin: 10px;
+        display: block;
+    }
+    section span img {
+        height: 5rem;
+    }
+}
+
+:root {
+    --color1: #e0e0e0;
+    --color2: white;
+    --color3: rgb(18, 58, 18);
+    --color4: darkorange;
+    --color5: saddlebrown;
+    --color6: #2c3e50;
+    background-color: var(--color1);
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    color: var(--color2);
+    background-color: var(--color1);
+    margin: 10px 0px;
+}
+h1 {
+    padding: 10px 0 10px 0;
+    display: block;
+    background-color: var(--color3);
+    color: var(--color2);
+    text-align: center;
+    align-content: center;
+    height: 100px;
+    font-size: 32px;
+}
+
+main {
+    width: 100%;
+    background-color: var(--color3);
+}
+main picture {
+    grid-row: 1/2;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+picture img {
+    margin-inline: auto;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+main section {
+    display: grid;
+    background-color: var(--color2);
+    grid-template-columns: 1fr;
+    padding: 10px;
+    border: 3px outset var( --color6);
+    border-radius: 10px;
+}
+section h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: var( --color6);
+    color: var(--color2);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#data {
+    grid-row: 2/3;
+}
+#weather {
+    grid-row: 3/4;
+}
+
+.list li {
+    padding: 5px;
+    display: grid;
+}
+.list li h3 {
+    grid-column: 1/2;
+    font-weight: 700;
+    text-align: right;
+}
+.list li p {
+    grid-column: 2/3;
+    padding-left: 1rem;
+    align-self: center;
+    text-align: left;
+}
+
+
+
+footer {
+    background-color: var(--color3);
+    color: var(--color2);
+    display: block;
+    text-align: center;
+    height: 125px;
+    margin: 10px 0px;
+}
+#currentyear {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 1.75rem;
+}
+#lastModified {
+    margin-top: 5px;
+    padding-bottom: 1.5rem;
+    font-size: 13px;
+    font-weight: 400;
+}
