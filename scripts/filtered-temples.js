@@ -76,6 +76,22 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
+     {
+        templeName: "Kirtland",
+        location: "Kirtland, Ohio, United States",
+        dedicated: "1836, March, 27",
+        area: 15000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/kirtland-temple/kirtland-temple-1275-main.jpg"
+    },
+     {
+        templeName: "Palmyra New York",
+        location: "Palmyra, New York, United States",
+        dedicated: "2000, April, 6",
+        area: 10900,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/077-Palmyra-New-York-Temple.jpg"
+    },
     {
         templeName: "Durban South Africa",
         location: "Durban, South Africa",
@@ -84,22 +100,7 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/durban-south-africa-temple/durban-south-africa-temple-7936-main.jpg"
     },
-    {
-        templeName: "Kirtland",
-        location: "Kirtland, Ohio, United States",
-        dedicated: "1836, March, 27",
-        area: 15000,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/kirtland-temple/kirtland-temple-1275-main.jpg"
-    },
-    {
-        templeName: "Palmyra New York",
-        location: "Palmyra, New York, United States",
-        dedicated: "2000, April, 6",
-        area: 10900,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/077-Palmyra-New-York-Temple.jpg"
-    },
+   
 ];
 
 createTempleCard(temples);
