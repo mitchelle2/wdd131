@@ -81,8 +81,8 @@ main h1 {
 
 .templesCards section {
     margin: 20px auto;
-    border: 1px solid grey;
-    background-color: rgb(211, 202, 202);
+    border: 1px solid rgb(245, 241, 241);
+    background-color: rgb(225, 219, 219);
     color: black;
     text-align: center;
     padding: 1rem;
@@ -107,9 +107,12 @@ main h1 {
 .templesCards section img {
     width: 100%;
     height: auto;
-    border: 1px solid rgb(181, 178, 178);
     margin-top: 1.2rem;
-    box-shadow: 4px 4px 10px  #34495e;   
+    box-shadow: rgb(32, 6, 52) 4px 4px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(112, 110, 110);
+    border-image: initial;
 }
 
 footer {
