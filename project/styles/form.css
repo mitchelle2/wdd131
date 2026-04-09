@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #f1e385;
+    --border-color: #999;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: rgb(62, 61, 61);
+    margin: 0 auto;
+}
+
+section {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 600px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    margin: 0px 5px;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    color: #333;
+}
+
+form select,
+form textarea,
+form input[type="date"],
+form input[type="text"] {
+    background-color: #eee;
+    border: 1px var(--border-color) solid;
+    border-radius: 6px;
+    padding: 0.6rem;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--border-color);
+    background: white;
+    margin-right: 6px;
+    vertical-align: middle;
+    appearance: none;
+}
+
+form input[type="radio"] {
+    border-radius: 50%;
+}
+form input[type="checkbox"] {
+    border-radius: 6px;
+}
+
+form input[type="radio"]:checked,
+form input[type="checkbox"]:checked {
+    background: green;
+    border: #fff;
+}
+
+form select {
+    height: 54px;
+    color: #333;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form .heading {
+    padding-top: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: "Noto Sans", sans-serif;
+}
+
+form .buttons {
+    margin-top: 0.5rem;
+}
+
+form .buttons label {
+    margin-top: 0.5rem;
+}
+
+form span {
+    color: rgb(62, 61, 61);
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: 0px;
+    border-radius: 6px;
+    background: var(--primary-color);
+    color:  rgb(62, 61, 61);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 20px;
+    background-color: #f1e385;
+    color: rgb(62, 61, 61);
+    text-align: center;
+}
+
+.thanks {
+    padding: 50px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+form input[type="date"]:valid,
+form select:valid {
+   border-bottom: 10px green solid;
+}

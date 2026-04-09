@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review">
+    <meta name="author" content="Mitchelle Madumere">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <section>
+        <form method="get" action="review.html">
+
+            <p>* identifies a required field</p>
+
+            <!-- PRODUCT NAME -->
+            <div class="heading">
+                <label for="prodname">Product Name*</label>
+            </div>
+
+            <select id="prodname" name="prodname" required>
+                <option selected disabled value="">Select a product &#9662;</option>
+            </select>
+
+            <!-- RATING -->
+            <div class="heading">Overall Rating*</div>
+
+            <div class="buttons">
+                <label for="5star">
+                    <input type="radio" name="rating" id="5star" value="5" required>⭐⭐⭐⭐⭐
+                </label>
+
+                <label for="4star">
+                    <input type="radio" name="rating" id="4star" value="4">⭐⭐⭐⭐
+                </label>
+
+                <label for="3star">
+                    <input type="radio" name="rating" id="3star" value="3">⭐⭐⭐
+                </label>
+
+                <label for="2star">
+                    <input type="radio" name="rating" id="2star" value="2">⭐⭐
+                </label>
+
+                <label for="1star">
+                    <input type="radio" name="rating" id="1star" value="1">⭐
+                </label>
+            </div>
+
+            <!-- INSTALL DATE -->
+            <div class="heading">
+                <label for="instdate">Date of Installation*</label>
+            </div>
+
+            <input type="date" name="instdate" id="instdate" required>
+
+            <!-- FEATURES -->
+            <div class="heading">
+                Which feature did you find useful in the product?<br>
+                <span>(Check all that apply)</span>
+            </div>
+
+            <div class="buttons">
+
+                <label for="durability">
+                    <input type="checkbox" name="features" id="durability" value="durability">Durability
+                </label>
+
+                <label for="ease">
+                    <input type="checkbox" name="features" id="ease" value="ease">Ease of Use
+                </label>
+
+                <label for="performance">
+                    <input type="checkbox" name="features" id="performance" value="performance">Performance
+                </label>
+
+                <label for="design">
+                    <input type="checkbox" name="features" id="design" value="design">Design
+                </label>
+
+            </div>
+
+            <!-- WRITTEN REVIEW -->
+            <div class="heading">
+                <label for="textreview">Written Review <span>(Optional)</span></label>
+            </div>
+
+            <textarea name="textreview" id="textreview"></textarea>
+
+            <!-- USER NAME -->
+            <div class="heading">
+                <label for="name">Your Name <span>(Optional)</span></label>
+            </div>
+
+            <input type="text" name="name" id="name" placeholder="Your Name">
+
+            <!-- SUBMIT -->
+            <input type="submit" value="Post Review">
+
+        </form>
+    </section>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 💻Mitchelle Madumere 💻Nigeria💻</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

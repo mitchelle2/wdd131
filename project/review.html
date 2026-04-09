@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review Confirmation - Thank you for submitting your review.">
+    <meta name="author" content="Mitchelle Madumere">
+
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>✅ Review Submitted</h1>
+    </header>
+
+    <main>
+        <p>Thank you for submitting your review!</p>
+        <p>You have submitted <span id="reviewCount">0</span> reviews.</p>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> 💻Mitchelle Madumere 💻 Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        let count = localStorage.getItem("reviewCount") || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+        document.getElementById("reviewCount").textContent = count;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        });
+    </script>
+</body>
+
+</html>
