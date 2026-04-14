@@ -1,19 +1,56 @@
-form{
-display:flex;
-flex-direction:column;
-width:300px;
-margin:auto;
+
+
+.contact-info{
+text-align:center;
+margin:20px 0;
+font-size:1.1rem;
 }
 
-input,textarea{
-margin-bottom:10px;
-padding:8px;
+form{
+max-width:450px;
+margin:30px auto;
+padding:20px;
+background:white;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+input,
+textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:1rem;
+}
+
+input:focus,
+textarea:focus{
+outline:none;
+border-color:#00379d;
+box-shadow:0 0 5px rgba(0,55,157,0.3);
 }
 
 button{
-background:#457B9D;
+width:100%;
+margin-top:15px;
+padding:12px;
+background:#e63946;
 color:white;
 border:none;
-padding:10px;
+border-radius:6px;
+font-size:1rem;
 cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#c92f3b;
 }

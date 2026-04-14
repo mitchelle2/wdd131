@@ -33,22 +33,30 @@
 
 <main>
 
-<h2>Contact Us</h2>
+<h1>Contact Us</h1>
 
-<form id="contactForm">
+<section class="contact-info">
 
-<label for="name">Name</label>
-<input type="text" id="name" required>
+<p>📞 Phone: +234 800 123 4567</p>
+<p>✉ Email: rivercityfoodguide@email.com</p>
 
-<label for="email">Email</label>
-<input type="email" id="email" required>
+</section>
+
+<form>
+
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" required>
 
 <label for="message">Message</label>
-<textarea id="message" required></textarea>
+<textarea id="message" name="message" rows="5" required></textarea>
 
-<button type="submit">Submit</button>
-
-</form>
+<button type="submit">Send Message</button>
 
 <p id="formMessage"></p>
 

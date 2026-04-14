@@ -177,6 +177,8 @@ fav.textContent="No favorite restaurant saved.";
 }
 
 
+
+
 // EVENTS
 const foodBtn=document.getElementById("foodBtn");
 
