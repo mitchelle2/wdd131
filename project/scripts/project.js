@@ -3,25 +3,24 @@ const menuBtn = document.getElementById("menuBtn");
 const navMenu = document.getElementById("navMenu");
 
 if(menuBtn){
-menuBtn.addEventListener("click", ()=>{
+menuBtn.addEventListener("click",()=>{
 navMenu.classList.toggle("open");
 });
 }
 
 
-// ARRAY
-const foods = ["Jollof Rice","Suya","Grilled Fish","Fried Plantain"];
+// DISH DATA
+const foods = [
+
+{name:"Jollof Rice", image:"images/jollof-rice.jpg"},
+{name:"Suya", image:"images/suya.jpg"},
+{name:"Grilled Fish", image:"images/grilledfish.jpg"},
+{name:"Fried Plantain", image:"images/plantain.jpg"}
+
+];
 
 
-// OBJECT
-const restaurantExample = {
-name:"River Grill",
-specialty:"Grilled Fish",
-rating:4
-};
-
-
-// RESTAURANT ARRAY
+// RESTAURANTS
 const restaurants = [
 
 {name:"River Grill", specialty:"Grilled Fish", rating:3},
@@ -32,7 +31,7 @@ const restaurants = [
 ];
 
 
-// DISPLAY YEAR
+// YEAR
 function displayYear(){
 
 const year=document.getElementById("year");
@@ -56,7 +55,7 @@ mod.textContent=document.lastModified;
 }
 
 
-// SHOW RANDOM DISH
+// SHOW RANDOM DISH + IMAGE
 function showRandomFood(){
 
 const result=document.getElementById("foodResult");
@@ -67,16 +66,22 @@ const random=Math.floor(Math.random()*foods.length);
 
 const dish=foods[random];
 
-result.textContent=`Today's dish is ${dish}`;
+result.innerHTML=`
 
-localStorage.setItem("favoriteDish",dish);
+<h3>${dish.name}</h3>
+
+<img src="${dish.image}" alt="${dish.name}" width="250">
+
+`;
+
+localStorage.setItem("favoriteDish",dish.name);
 
 }
 
 }
 
 
-// DISH POP OUT
+// DISH CARD POP OUT
 const dishes=document.querySelectorAll(".dish-card");
 
 dishes.forEach(card=>{
@@ -108,27 +113,27 @@ const card=document.createElement("div");
 card.classList.add("restaurant-card");
 
 card.innerHTML=`
+
 <h3>${r.name}</h3>
+
 <p>Specialty: ${r.specialty}</p>
+
 <p>Rating: ${stars}</p>
+
 <button class="saveFavBtn">Save Favorite</button>
+
 `;
 
 container.appendChild(card);
-const saveBtn = card.querySelector(".saveFavBtn");
 
-saveBtn.addEventListener("click", () => {
+const saveBtn=card.querySelector(".saveFavBtn");
 
-localStorage.setItem("favoriteRestaurant", r.name);
-
-});
-
-
-// SAVE FAVORITE
-card.addEventListener("click",()=>{
+saveBtn.addEventListener("click",()=>{
 
 localStorage.setItem("favoriteRestaurant",r.name);
 
+alert("Saved as favorite!");
+
 });
 
 });
@@ -138,7 +143,7 @@ localStorage.setItem("favoriteRestaurant",r.name);
 }
 
 
-// SHOW TOP RATED
+// FILTER TOP RATED
 function showTopRated(){
 
 const filtered=restaurants.filter(r=>r.rating>=4);
@@ -148,7 +153,7 @@ displayRestaurants(filtered);
 }
 
 
-// DISPLAY FAVORITE
+// SHOW FAVORITE
 function displayFavorite(){
 
 const fav=document.getElementById("favoriteRestaurant");
@@ -172,38 +177,6 @@ fav.textContent="No favorite restaurant saved.";
 }
 
 
-// CONTACT FORM
-function handleForm(){
-
-const form=document.getElementById("contactForm");
-
-if(form){
-
-form.addEventListener("submit",(e)=>{
-
-e.preventDefault();
-
-const name=document.getElementById("name").value;
-
-const message=document.getElementById("formMessage");
-
-if(name.length>0){
-
-message.textContent=`Thank you ${name}, your message has been received.`;
-
-}
-
-});
-
-}
-
-}
-
-
-// ARRAY METHOD
-foods.forEach(food=>console.log(food));
-
-
 // EVENTS
 const foodBtn=document.getElementById("foodBtn");
 
@@ -224,9 +197,8 @@ favBtn.addEventListener("click",displayFavorite);
 }
 
 
-// INITIALIZE
+// INIT
 displayYear();
 displayLastModified();
 displayRestaurants(restaurants);
 displayFavorite();
-handleForm();
