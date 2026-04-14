@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dishes</title>
+
+<link rel="stylesheet" href="styles/project.css">
+<link rel="stylesheet" href="styles/dishes.css">
+
+<script defer src="scripts/project.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<img class="iso-logo" src="images/simple-bowl-hot-food.webp" alt="logo">
+
+<h1>River City Food Guide</h1>
+
+<button id="menuBtn">☰</button>
+
+<nav id="navMenu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="dishes.html">Dishes</a></li>
+<li><a href="restaurants.html">Restaurants</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h2>Popular Local Dishes</h2>
+
+<button id="menuBtn">☰</button>
+
+<div class="dish-grid">
+
+<article class="dish-card">
+<figure>
+<img src="images/jollof-rice.jpg" alt="Jollof Rice" loading="lazy">
+<h3>Jollof Rice</h3>
+<p>A rich tomato based rice dish loved across West Africa.</p>
+</figure>
+</article>
+
+<article class="dish-card">
+<figure>
+<img src="images/suya.jpg" alt="Suya" loading="lazy">
+<h3>Suya</h3>
+<p>Spicy grilled beef skewers coated with peanut spice.</p>
+</figure>
+</article>
+
+<article class="dish-card">
+<figure>
+<img src="images/grilled-fish.jpg" alt="Grilled Fish" loading="lazy">
+<h3>Grilled Fish</h3>
+<p>Fresh fish grilled with herbs and served hot.</p>
+</figure>
+</article>
+
+<article class="dish-card">
+<figure>
+<img src="images/roasted-plantain.jpg" alt="Roasted Plantain" loading="lazy">
+<h3>Fried Plantain</h3>
+<p>Sweet ripe plantain fried until golden brown.</p>
+</figure>
+</article>
+
+</div>
+
+<section class="dish-of-day">
+
+<h2>Dish of the Day</h2>
+
+<button id="foodBtn">Show Dish</button>
+
+<div id="foodResult"></div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© <span id="year"></span> River City Food Guide</p>
+<p>Last Modified: <span id="lastModified"></span></p>
+
+</footer>
+
+</body>
+</html>

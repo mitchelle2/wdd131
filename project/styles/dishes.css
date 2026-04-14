@@ -1,0 +1,47 @@
+.dish-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.dish-card{
+background:white;
+padding:15px;
+border-radius:8px;
+cursor:pointer;
+transition:transform .3s, box-shadow .3s;
+}
+
+.dish-card:hover{
+transform:scale(1.05);
+}
+
+.dish-card.active{
+transform:scale(1.15);
+z-index:10;
+}
+
+.dish-card img{
+width:100%;
+border-radius:6px;
+}
+
+.dish-of-day{
+text-align:center;
+margin:40px;
+}
+
+#foodBtn{
+padding:10px 15px;
+background:#e63946;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+#foodResult img{
+margin-top:15px;
+border-radius:8px;
+}

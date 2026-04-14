@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>River City Food Guide</title>
+
+<meta name="description" content="Discover the best local dishes and restaurants in River City.">
+
+<link rel="stylesheet" href="styles/project.css">
+<script type="module" defer src="scripts/project.js"></script>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="author" content="Mitchelle Madumere">
+
+</head>
+
+<body>
+
+<header>
+<img class="iso-logo" src="images/simple-bowl-hot-food.webp" alt="logo">
+<h1>River City Food Guide</h1>
+
+<button id="menuBtn">☰</button>
+
+<nav id="navMenu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="dishes.html">Dishes</a></li>
+<li><a href="restaurants.html">Restaurants</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+     <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Discover popular local dishes!</h1>
+            <p>Explore dishes loved by locals and popular restaurants.</p>
+            <a href="restaurants.html" class="btn-cta-hero" aria-label="diverse dishes">View Our Featured restaurants</a>
+        </section>
+
+<section class="food-grid">
+
+
+<figure>
+<img src="images/jollof.jpg" alt="Jollof rice dish" loading="lazy">
+<h3>Jollof Rice</h3>
+<figcaption>A flavorful rice dish cooked with tomatoes and spices.</figcaption>
+</figure>
+
+
+
+<figure>
+<img src="images/suya.jpg" alt="Suya grilled meat" loading="lazy">
+<h3>Suya</h3>
+<figcaption>Spicy grilled meat served with onions and peppers.</figcaption>
+</figure>
+
+
+
+<figure>
+<img src="images/african-salad.jpg" alt="African salad" loading="lazy">
+<h3>African salad</h3>
+<figcaption>local dish with delicious seasoning.</figcaption>
+</figure>
+
+
+</section>
+</main>
+
+<footer>
+
+<p>© <span id="year"></span> River City Food Guide</p>
+<p>Last Modified: <span id="lastModified"></span></p>
+
+</footer>
+
+
+
+</body>
+</html>
